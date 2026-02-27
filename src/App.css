@@ -1,38 +1,685 @@
-.App {
-  text-align: center;
+html,
+body {
+    font-family: "Hammersmith One", system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.video-container video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.content-front {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.password-text {
+    text-align: center;
+    margin-top: -25px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-transform: uppercase;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+}
+
+.first-element {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 280px;
+    flex-wrap: wrap;
+    margin-bottom: -50px;
+    margin-top: 50px;
+}
+
+.inpo {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-right: 35px
+}
+
+.inpo input {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    background-color: #fc6d2c;
+    border: 2px red solid;
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.inpo input:focus {
+    outline: none;
+    background-color: #fc6d2c;
+    scale: 1.2;
+    margin-left: 6px;
+    margin-right: 6px;
+
+    font-size: 35px;
+
+}
+
+
+.sub {
+    align-self: center;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-container button {
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: rgb(234, 111, 74);
+}
+
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #383838;
+    color: white;
+}
+
+
+.chick {
+    align-self: center;
+    margin-bottom: 0px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    scale: 0.8;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    background-image: url("../public/media/chick.gif");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.patr-patr {
+    width: 100vw;
+    background-color: aliceblue;
+    border: 1px aliceblues solid;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+
+}
+
+
+.happy {
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.happy h1 {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.video-container-secret {
+
+    width: 100vh;
+    height: 1200px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.background-2 {
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background-2 video {
+    scale: 1.2;
+}
+
+.birthday {
+    width: 250px;
+    height: 70px;
+    background-color: wheat;
+    border: 1px wheat solid;
+    border-radius: 30px;
+    letter-spacing: 0.55rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-2 {
+    background-image: url("../public/media/profile.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.image-2-container {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+
+}
+
+.image-2-container h1 {
+    top: 570px;
+    background-color: #fefaac;
+    border: #fefaac;
+    border-radius: 20px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(69, 72, 66);
+    z-index: 1;
+}
+
+.img-2-container {
+    display: flex;
+    width: 330px;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.img-2 {
+    width: 200px;
+    height: 200px;
+    top: 1200px;
+    scale: 0.7;
+    left: -60px;
+    background-image: url("../public/media/chick-2.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(-5px 5px 10px #fefaac);
+
+}
+
+.content-secret {
+    z-index: 1;
+    position: relative;
+}
+
+@keyframes jmp {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.content-secret button {
+    top: 1350px;
+    left: 240px;
+    width: 100px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: yellow;
+    border: 1px yellow solid;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+    animation: jmp 1s infinite ease-in-out;
+
+}
+
+.content-secret button:hover {
+    background-color: orange;
+    scale: 1.1;
+
+}
+
+.hi {
+    color: rgb(56, 54, 54);
+    font-size: 50px;
+    filter: drop-shadow(0 0 5px rgba(56, 54, 54, 0.9));
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    width: 100px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+.message-box-1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    align-self: flex-end;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 0, 0.674), rgba(255, 255, 255, 0.2));
+    background-size: cover;
+
+
+    width: 290px;
+    height: 600px;
+    border: 1px white solid;
+    border-radius: 35px;
+    z-index: 1;
+}
+
+
+
+
+.message-box-2 {
+    background-image:
+        linear-gradient(rgba(255, 255, 0, 0.674), rgba(255, 255, 255, 0.2));
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-self: flex-start;
+    width: 290px;
+    height: 550px;
+    border: 1px white solid;
+    border-radius: 35px;
+}
+
+.message-box-3 {
+    background-image:
+        linear-gradient(rgba(255, 255, 0, 0.674), rgba(255, 255, 255, 0.2));
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-self: flex-end;
+    width: 290px;
+    height: 530px;
+    border: 1px white solid;
+    border-radius: 35px;
+}
+
+.message-box-4 {
+    margin-left: 20px;
+    background-image:
+        linear-gradient(rgba(255, 255, 0, 0.674), rgba(255, 255, 255, 0.2));
+    background-size: cover;
+    margin-right: 20px;
+    align-self: flex-start;
+    width: 290px;
+    height: 550px;
+    border: 1px white solid;
+    border-radius: 35px;
+}
+
+
+.dots {
+    margin-top: 15px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.dots div {
+    z-index: 2;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border: 1px black solid;
+    border-radius: 50%;
+}
+
+
+.last-thing {
+    width: 100vw;
+    height: 200px;
+    margin: 0px;
+    bottom: -1000px;
+    z-index: 3;
+    filter: drop-shadow(0 0 5px rgba(56, 54, 54, 0.9));
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.img-3 {
+    position: absolute;
+    bottom: 60px;
+    right: 35px;
+    width: 95px;
+    height: 80px;
+    background-image: url("../public/media/chick-3.gif");
+    background-size: cover;
+}
+
+.last-thing h1 {
+    margin-left: 10px;
+}
+
+.last-thing button {
+    width: 80px;
+    height: 40px;
+    border: 1px white solid;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.yes {
+    margin-top: 25px;
+    margin-left: 8px;
+    top: 130px;
+    left: 10px;
+}
+
+.background-3 {
+    position: fixed;
+    z-index: -1;
+}
+
+.background-3 video {
+    scale: 1.2;
+}
+
+.warn {
+    height: 36px;
+    text-align: center;
+    color: yellow;
+    padding: 3px;
+}
+
+.letter-content {
+    margin-top: 20px;
+    padding: 0px;
+    z-index: 2;
+    width: 100vw;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.letter-content h3 {
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    font-family: 'Pacifico', cursive;
+    text-transform: capitalize;
+    text-align: justify;
+    line-height: 28px;
+    padding: 10px;
+    background: repeating-linear-gradient(to bottom,
+            transparent 0px,
+            transparent 27px,
+            rgba(0, 0, 255, 0.9) 27px,
+            rgba(0, 0, 255, 0.9) 28px);
+    background-origin: content-box;
+    background-attachment: local;
+}
+
+.video-container-last {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: flex-end;
+}
+
+.background-4 {
+    z-index: 1;
+    position: fixed;
+}
+
+.background-4 video {
+    scale: 1.5;
+
+}
+
+.no-container {
+    margin-left: 15px;
+    position: absolute;
+    width: 220px;
+    height: 90px;
+    overflow: hidden;
+    left: 80px;
+    top: 107px;
+}
+
+.no-container button {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    cursor: pointer;
+}
+
+
+.last-content {
+    color: white;
+    z-index: 2;
+    width: 100vw;
+    height: 620px;
+    filter: drop-shadow(0 0 5px rgba(56, 54, 54, 0.9));
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.head-text {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline dashed;
+}
+
+.img-5-text {
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    align-content: flex-start;
+    width: 300px;
+    height: 100px;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+.img-5 {
+    width: 120px;
+    height: 100px;
+    background-image: url("../public/media/chick-4.gif");
+    background-size: cover;
+}
+
+.mid-text {
+    font-size: 30px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.img-6 {
+    width: 120px;
+    height: 120px;
+    background-image: url("../public/media/chick-5.gif");
+    background-size: cover;
+    margin-left: 130px;
+}
+
+.last-text {
+    font-size: 25px;
+    padding: 20px;
+    text-align: justify;
+
+}
+
+
+.hint {
+    display: flex;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 400ms;
+    width: 100vw;
+    height: 200px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    border: 1px white solid;
+    border-radius: 20px;
+    background-color: #f1e8e8;
+    justify-content: center;
+    opacity: 0%;
+    align-self: flex-end;
+    flex-wrap: wrap;
+    filter: drop-shadow(5px 5px 30px rgb(255, 0, 0));
+
+}
+
+.hint.show {
+    top: 293px;
+    opacity: 100%;
+}
+
+.hint div {
+    background-image: url("../public/media/hamster.gif");
+    background-size: cover;
+    scale: 1;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        margin: 0px;
+        font-size: 14px;
+
+    }
+
+    .video-container {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .video-container-secret {
+        width: 100vw;
+
+    }
+
+    .video-container-letter {
+        width: 100vw;
+    }
+
+    .no-container {
+        top: 100px;
+    }
+
+
 }
