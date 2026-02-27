@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/khusha/static/css/main.44bf11f7.css",
-    "main.js": "/khusha/static/js/main.3eae2e3e.js",
+    "main.js": "/khusha/static/js/main.e2a02e65.js",
+    "static/media/background-1.mp4": "/khusha/static/media/background-1.376605bb20e511d012f6.mp4",
     "static/media/profile.png": "/khusha/static/media/profile.08c12fb15cd7d789135f.png",
     "static/media/chick-4.gif": "/khusha/static/media/chick-4.589500f8c13cbd6a1784.gif",
     "static/media/hamster.gif": "/khusha/static/media/hamster.89ff67ee195bf65fbf61.gif",
@@ -11,10 +12,10 @@
     "static/media/chick-5.gif": "/khusha/static/media/chick-5.63cf27f889eb56e2904a.gif",
     "index.html": "/khusha/index.html",
     "main.44bf11f7.css.map": "/khusha/static/css/main.44bf11f7.css.map",
-    "main.3eae2e3e.js.map": "/khusha/static/js/main.3eae2e3e.js.map"
+    "main.e2a02e65.js.map": "/khusha/static/js/main.e2a02e65.js.map"
   },
   "entrypoints": [
     "static/css/main.44bf11f7.css",
-    "static/js/main.3eae2e3e.js"
+    "static/js/main.e2a02e65.js"
   ]
 }
