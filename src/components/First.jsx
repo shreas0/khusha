@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import bgVideo from "./assets/background-1.mp4";
+import bgVideo from "../assets/background-1.mp4";
 
 function Front() {
     let hamster2 = 'url("/media/hamster-2.gif")';
