@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/your-repo-name/static/css/main.b708174a.css",
+    "main.js": "/your-repo-name/static/js/main.3eae2e3e.js",
+    "static/media/profile.png": "/your-repo-name/static/media/profile.08c12fb15cd7d789135f.png",
+    "static/media/chick-4.gif": "/your-repo-name/static/media/chick-4.589500f8c13cbd6a1784.gif",
+    "static/media/hamster.gif": "/your-repo-name/static/media/hamster.89ff67ee195bf65fbf61.gif",
+    "static/media/chick.gif": "/your-repo-name/static/media/chick.35f09174ea7647aa0451.gif",
+    "static/media/chick-3.gif": "/your-repo-name/static/media/chick-3.46719182dbe33780dc2e.gif",
+    "static/media/chick-2.gif": "/your-repo-name/static/media/chick-2.7635669b583732436849.gif",
+    "static/media/chick-5.gif": "/your-repo-name/static/media/chick-5.63cf27f889eb56e2904a.gif",
+    "index.html": "/your-repo-name/index.html",
+    "main.b708174a.css.map": "/your-repo-name/static/css/main.b708174a.css.map",
+    "main.3eae2e3e.js.map": "/your-repo-name/static/js/main.3eae2e3e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b708174a.css",
+    "static/js/main.3eae2e3e.js"
+  ]
+}
