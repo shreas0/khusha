@@ -1,5 +1,6 @@
 import { useState, useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import bgVideo from "./assets/background-1.mp4";
 
 function Front() {
     let hamster2 = 'url("/media/hamster-2.gif")';
@@ -110,7 +111,7 @@ function Front() {
     return (
         <div className="video-container">
            <video autoPlay muted loop playsInline preload="metadata">
-    <source src="/media/background-1.mp4" type="video/mp4" />
+     <source src={bgVideo} type="video/mp4" />
 </video>
 
             <div className="content-front">
